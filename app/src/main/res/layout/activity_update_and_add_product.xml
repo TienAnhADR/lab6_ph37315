@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".views.UpdateAndAdd_Product_Activity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Them"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:id="@+id/tvTitleDiaLog"
+        android:textStyle="bold"
+        android:textAllCaps="true"/>
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgChonImg"/>
+    <EditText
+        android:textColorHint="@color/black"
+        android:background="@drawable/bgr_buttom"
+        android:id="@+id/edtNamePro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name product"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+    <EditText
+
+        android:background="@drawable/bgr_buttom"
+        android:id="@+id/edtPrice"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price product"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bgr_btn"
+            android:text="Back"/>
+        <Button
+            android:background="@drawable/bgr_btn"
+            android:layout_marginStart="20dp"
+            android:id="@+id/btnAddOrUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add product"/>
+    </LinearLayout>
+
+</LinearLayout>

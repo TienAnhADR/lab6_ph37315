@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".views.LoginActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAllCaps="true"/>
+    <EditText
+        android:id="@+id/edtUseNameLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:background="@drawable/bgr_buttom"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+    <EditText
+        android:background="@drawable/bgr_buttom"
+        android:id="@+id/edtPassWordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <Button
+            android:background="@drawable/bgr_btn"
+            android:id="@+id/btnLogin"
+            android:layout_marginEnd="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sign in"/>
+        <Button
+            android:background="@drawable/bgr_btn"
+            android:id="@+id/tvRegister"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="Sign up"/>
+    </LinearLayout>
+
+</LinearLayout>
